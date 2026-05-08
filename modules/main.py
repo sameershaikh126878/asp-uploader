@@ -148,7 +148,7 @@ async def start(client: Client, msg: Message):
     await asyncio.sleep(1)
     await start_message.edit_text(
         Data.START.format(msg.from_user.mention) +
-        "Checking status Okay... Command is Private Dear.🌚**Bot Made BY♡︎⎯꯭̽𝅃꯭᳚🦋꯭ ∂я-αѕρ 𝅥ͦ𝆬⋆𝆹𝅥𝅮᪳🪽**🔍\n\n"
+        "Checking status Okay... Command is Private Dear.🌚**Cmd /tox \n\n Bot Made BY♡︎⎯꯭̽𝅃꯭᳚🦋꯭ ∂я-αѕρ 𝅥ͦ𝆬⋆𝆹𝅥𝅮᪳🪽**🔍\n\n"
         "Progress:[🟩🟩🟩🟩🟩🟩🟩🟩🟩] 100%\n\n"
     )
 
@@ -160,7 +160,7 @@ async def restart_handler(_, m):
 
 @bot.on_message(filters.command(["TOX"]) )
 async def txt_handler(bot: Client, m: Message):
-    editable = await m.reply_text(f"**🔹Hi I am Poweful Lovely TXT Downloader📥 Bot.**\n🔹**Send me the TXT file and Just wait and Watch😚Comd /tox.**")
+    editable = await m.reply_text(f"**🔹Hi I am Poweful Lovely TXT Downloader📥 Bot.**\n🔹**Send me the TXT file and Just wait and Watch😚.**")
     input: Message = await bot.listen(editable.chat.id)
     x = await input.download()
     await input.delete(True)
@@ -219,7 +219,7 @@ async def txt_handler(bot: Client, m: Message):
     except Exception:
             res = "UN"
     
-    await editable.edit("**Enter Your Name or send '/SK' for use default.🌚\n Eg ♡︎⎯꯭̽𝅃꯭᳚🦋꯭ ∂я-αѕρ 𝅥ͦ𝆬⋆𝆹𝅥𝅮᪳🪽 **")
+    await editable.edit("**Enter Your Name or send '/ASP' for use default.🌚\n Eg ♡︎⎯꯭̽𝅃꯭᳚🦋꯭ ∂я-αѕρ 𝅥ͦ𝆬⋆𝆹𝅥𝅮᪳🪽 **")
     input3: Message = await bot.listen(editable.chat.id)
     raw_text3 = input3.text
     await input3.delete(True)
